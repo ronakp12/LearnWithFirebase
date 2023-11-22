@@ -7,6 +7,7 @@ export async function signInUserWithGoogle () {
     /* STEP 2: Create a new instance of the Firebase Google Authenticator Proivider
     We are going to look at the following documentation to figure out how we might do 
     this: https://firebase.google.com/docs/auth/web/google-signin */
+    const provider = new GoogleAuthProvider();
 
     try {
 

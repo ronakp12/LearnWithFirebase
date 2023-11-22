@@ -15,6 +15,8 @@ export async function signInUserWithGoogle () {
         complete the authetication process. We are going to look at the following documentation 
         to figure out how we might do this: https://firebase.google.com/docs/auth/web/google-signin */
 
+        await signInWithPopup(auth, provider);
+
         // return the string "success" if sign-in was complete
         return "success";
     

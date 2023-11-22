@@ -157,6 +157,7 @@ function handleItemAdd() {
     parameters:
     1) userID 
     */
+    fetchAndDisplayAllToDoItems(userId);
 }
 
 document.getElementById("new-todo-btn").addEventListener("click", handleItemAdd);

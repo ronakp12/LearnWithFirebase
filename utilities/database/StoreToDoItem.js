@@ -13,7 +13,12 @@ export async function storeToDoItem(userId, userEmail, itemText) {
         const docUniqueId = generateUniqueId();
 
         //STEP 6: Create a object called data that will hold the information going into the document 
-
+        const data = {
+            userId: userId, 
+            email: userEmail, 
+            itemText: itemText, 
+            uid: docUniqueId, 
+        };
 
         // store the following data in a document the specified user collection
         // userTodoListCollection -> the collection we store into
